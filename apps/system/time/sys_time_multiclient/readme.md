@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Title
+# Time System Service multi-client
 
 This example application demonstrates the multi-client system timer functionality
 
@@ -73,7 +73,7 @@ The following table shows the target hardware for the application projects.
 
 *Note: Printing of the output messages are asynchronous events and hence their ordering is not guaranteed. Image provided in above step is for illustration purpose only.*
 
-Refer to the following table for LED name:
+Refer to the following table for LED and Switch name:
 
 | Board | LED Name | Switch Name |
 | ----- | -------- | ----------- |
