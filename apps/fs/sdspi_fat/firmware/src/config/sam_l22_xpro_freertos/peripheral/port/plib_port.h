@@ -65,18 +65,14 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
 /*** Macros for GPIO_PB21 pin ***/
 #define GPIO_PB21_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = 1 << 21)
 #define GPIO_PB21_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = 1 << 21)
 #define GPIO_PB21_Toggle()            (PORT_REGS->GROUP[1].PORT_OUTTGL = 1 << 21)
-#define GPIO_PB21_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 21)) & 0x01)
 #define GPIO_PB21_OutputEnable()      (PORT_REGS->GROUP[1].PORT_DIRSET = 1 << 21)
 #define GPIO_PB21_InputEnable()       (PORT_REGS->GROUP[1].PORT_DIRCLR = 1 << 21)
+#define GPIO_PB21_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 21)) & 0x01)
 #define GPIO_PB21_PIN                  PORT_PIN_PB21
-
-
-
 // *****************************************************************************
 /* PORT Group
 
@@ -979,7 +975,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -1018,7 +1014,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
