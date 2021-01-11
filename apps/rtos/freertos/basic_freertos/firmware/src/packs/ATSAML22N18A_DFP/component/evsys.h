@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2020-08-06T15:10:46Z */
+/* file generated from device description version 2020-11-19T06:59:39Z */
 #ifndef _SAML22_EVSYS_COMPONENT_H_
 #define _SAML22_EVSYS_COMPONENT_H_
 
