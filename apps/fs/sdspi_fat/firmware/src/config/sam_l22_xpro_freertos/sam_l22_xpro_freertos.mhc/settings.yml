@@ -8,6 +8,6 @@ settings:
   PackageFilter: aws_cloud;bootloader_apps_uart;bsp;core;core_apps_sam_a5d2;core_apps_sam_l22;core_apps_sam_rh71;csp;csp_apps_sam_9x60;csp_apps_sam_e70_s70_v70_v71;csp_apps_sam_g55;csp_apps_sam_rh71;net;usb;
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
-  CMSISPath: .\dev_packs\arm\CMSIS\5.6.0
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
   DFPPath: .\dev_packs\Microchip\SAML22_DFP\3.3.47\atdf\ATSAML22N18A.atdf
