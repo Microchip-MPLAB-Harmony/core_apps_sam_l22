@@ -1,4 +1,4 @@
-<config configName="sam_l22_xpro_freertos" projectName="sdspi_fat_sam_l22_xpro_freertos" configVersion="1.1" device="ATSAML22N18A" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.4">
+<config configName="sam_l22_xpro_freertos" projectName="sdspi_fat_sam_l22_xpro_freertos" configVersion="1.1" device="ATSAML22N18A" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -63,7 +63,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -4042,6 +4042,382 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
+         <hash>3d4e265d0aa42f888385ccf073666e6ebb5ec9f834760b9da27c474e177f708d</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
+         <hash>85a11a834d04120402087ac61190566f893480e9d6c8fe903218330dc4ea7d30</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\driver\sdspi\src\drv_sdspi.c</file>
+         <hash>eed806c89adbbcdc38ce9889c39565b97b631aad5fd18306eb2eb99b4a9e3c52</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\src\sys_fs.c</file>
+         <hash>ca021c42833ef8d927a2165d42b8cf0d14ba0739eae48591dbd65b03f6166993</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
+         <hash>dae8ab1093eed0eebd86eef7f4e777e3d249d98b75528ff3841d41ce1c8f3fa6</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
+         <hash>43bd2a4bf5d6495e04c8409187d8f31dfaee58d8f94d7e3a4fd9830e5d7e68dc</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\adc.h</file>
+         <hash>5fd7fa478a3c498b13fe112e5ba928c010a14f1344ded0ed7e7459c97479f2a4</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
+         <hash>f288a68b8559a1913dd663136711f7adcaf8b3430627d7102978be4d808a02eb</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
+         <hash>b6da8ad0cb09303c87eb634679b97f56001c14f45acd1378103504699a95cad4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\dmac.h</file>
+         <hash>d60601f56ef6320e08352ef19563bfabaf4b3a29b5703ac7cd0422c0a52683eb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\nvmctrl.h</file>
+         <hash>978fd855eec77f7aec0dd97040b7318510227812397abf253373c22b029a0f52</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\system.h</file>
+         <hash>2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom2.h</file>
+         <hash>f5f3cfb7fef4451c0266e75b9b29816e55c9eac94fdc60fe61d6ba6ff8fda9d5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\int\src\sys_int.c</file>
+         <hash>23e798871ce6f7b4b0e0dbd5cb2cad7b43bd2dd1f38152f28d14f5a5b7a2938b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\osc32kctrl.h</file>
+         <hash>3acd6c7bab5c294cfbb355878f675e492c3cd7335e79bb2d203339e0a514206a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\peripheral\tc\plib_tc_common.h</file>
+         <hash>487b4f489229b8e16b24ab48ddc1f414b095585439f0e10d53b2285fc3979f63</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
+         <hash>783d9a41c90817eec55d9317475cc2663a785fc9a955c06d3207fcee6e0ec080</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\ccl.h</file>
+         <hash>29507698956642b92fb0dc8d8dec4eda8994b8f4c711293da5e4da2de1a6af85</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\ATSAML22N18A.ld</file>
+         <hash>e690bdf01bc2d45a36550a4277450dddd34e46ab829d4f6f62d6712f16ed80ba</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
+         <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\ccl.h</file>
+         <hash>706ef9eaeb255715a62354d4ca479b020ff1dfac881133d0735fd7beae51b064</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
+         <hash>d074534d7106cec83474b3b0a897bd2553e1a8895ecbd54f4f4fb25928066eee</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
+         <hash>c8d9b7a52d092f37b4c3b821806bd6e8a30dbcc600960f9aed2b2f10f965c09f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\osal\osal_freertos.c</file>
+         <hash>6f35cfd335587dd112d0ac648ae99539a5acbb98ba80ce6e8c7c855e7b8d7465</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\evsys.h</file>
+         <hash>54f23ebfd247f20cf7f94627eb4a8fe538d296ec17c60df435fd783bdaf62869</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
+         <hash>11b39b96ddc1125124762b3423a77b90dd40ea5b4582a3513830245046b24311</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\osal\osal_freertos.h</file>
+         <hash>ca5e502b9f076c4bdc8d97ac2e4cfdfa5d1b49f7d64222c353fac4dcd794bc7c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\user.h</file>
+         <hash>451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\slcd.h</file>
+         <hash>87ad2184e8c8665f72f0a18419aa8893bc872facb56e2c5198b40ff05d22bd35</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\system_module.h</file>
+         <hash>981fac23277aa77f682e7a9a28d436f892006cd5b4c7f23f50941b6d9a30e740</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\sercom.h</file>
+         <hash>964570d72de2dac88a52f5d2a13bea421a963e6ca18a9a50bec14c5eba6233df</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\aes.h</file>
+         <hash>4ba3b92be27d32719e569a9ef60dd960767d81b5106e32c10f580f3d648674e8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\rstc.h</file>
+         <hash>6c2ae27a82e2f512393757f8d8ee7565d1a8862a617d2ba9716afe6a2157f970</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom3.h</file>
+         <hash>1fa711e1831cfa0348133f1d7ea65ab5ef1f13343a8abcfe8d584d74623a4eb2</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\trng.h</file>
+         <hash>99d3fd0828a9ff675f311aa9d1387d9816cb017401630cf1a2a9a5009b519719</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\supc.h</file>
+         <hash>17732829964fd19f416be8a4a3dcc2370b440ee34d1f5ee33049a89e16b3d932</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\dmac.h</file>
+         <hash>a6664b476cf37a918fe845aff066a5c4c4c6725892e6fe48194ea211d9891c55</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\tasks.c</file>
+         <hash>732a09e7d3c0879661b73a7a710c344517ed218acb7f3110ef00c70f6fd99228</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\time\src\sys_time_local.h</file>
+         <hash>d3ef06b59d9a89efe9e8eb54fcf3b75120d56156cc21f6847ca4f9e902eb7c9d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\rtc.h</file>
+         <hash>f3eea106610a6be0fab84f36913003fc8cafee75d64872e18913a0834e0a709d</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
+         <hash>1947473678873963f3193497280d907f59a5936f92df6395327f7ca684cb1aa6</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\sys_fs_media_manager.h</file>
+         <hash>29bda64831783de33b10c3841e1eb703dc9f5b04287c1e26af8f3b75b7197b39</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\hardware_access\diskio.c</file>
+         <hash>accf63aa5c072a3e82a92eb72536ee727fd2b6e1acb1fb8f592dc3d074e4f69b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\rtc.h</file>
+         <hash>d1a66982afed55e7ed9f3ad6784714e67cd98fa0f9ec08d6dd7d40afa1277adf</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\peripheral\sercom\spi_master\plib_sercom3_spi_master.h</file>
+         <hash>5fa03ab6dd395a75bdbf25cdbcb5bbc7eba7bf0bdba9481b94e4cb27f6ed08ce</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\hardware_access\diskio.h</file>
+         <hash>eabe00adfe80de32df0b75244c230f3a04dbc27cb29b1d418cef549e3e7a9ec2</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\pm.h</file>
+         <hash>3a13c01e5fb11b71a7952cccbcdb77aad6680afb4b5975066eff606dea50153d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\peripheral\sercom\spi_master\plib_sercom3_spi_master.c</file>
+         <hash>206c12bf7a91e942f01fc6278d516070c2f7b09b104d67df690d54801cc4380c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\tc1.h</file>
+         <hash>a0f8dccc7f656b69900a92bb870b5a876e492ffd5e8ca129468185285a4ed370</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
+         <hash>2bf5b5f5d83684c1e6d90e5bd17da9de41d38ed61ec0410f94595ff343f89174</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\eic.h</file>
+         <hash>52188576e4bda2bd39b3c4042b1d997c941117be43383ea4e849850b4f6b4e18</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
+         <hash>2de01ae2556a38eb82c389de23c701805ec63308cfbcf3f84cb12141589b0858</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\dsu.h</file>
+         <hash>9243913ecae0362493708dcfce93441b9ec5ce7d6cf1c47d05989c9c1a60339a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\src\sys_fs_media_manager_local.h</file>
+         <hash>bbc6074719c421b07d4540ee6e745ae4145239f698780819c479e13bfdd9ddd5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\aes.h</file>
+         <hash>8698d33c4723a53d37a58ceab35b2c067111337f652d8a398070c1e255ab1ce0</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\libc_syscalls.c</file>
+         <hash>88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\tc.h</file>
+         <hash>5ba570f6d4292713e34bfb4c88afe749d9ec079f8074d6e9c049b2784f3efedc</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\wdt.h</file>
+         <hash>b87c564c6578afac9b5299d5e17ceb41f8a31e1e980d45a13f5cce9a99db1cf8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\dsu.h</file>
+         <hash>c6ffd25ff81acd7f1c4675b879fa0b49506758cf19302082bf5d037a5b5b0fce</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\file_system\ff.h</file>
+         <hash>d7b45a8f01fcd9923e18f8618408613021f2d36f35c632de31edaf5f4acf6c6b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\tc0.h</file>
+         <hash>436215d49dec3ab495fabe8240341d9b21183f2fbd946aaeca9d12a4706d482d</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h</file>
+         <hash>497fedcaae6e50dd33ded50764bbd28dac9897e93566e212279229ef094daf79</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\interrupts.h</file>
+         <hash>0759a31ef8d920bf3aafec5f2a9d01218dd7fc8602bd6df9998ebfbe25c018cd</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\pac.h</file>
+         <hash>b6eb4e92a687b9bb8e05aef51ff8063fc6c2d6c5c1c9411599564b059863a07d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom4.h</file>
+         <hash>6d888b482e7fc38aadb8c4cb5cf41e3a38396d30e0b1c30bfbf39ed3bb0c4a7f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\pac.h</file>
+         <hash>1285befdad6c70252161e82c56401deaecbf7649e6d0be87b212ae7215209c67</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\debug\sys_debug.h</file>
+         <hash>222cdc284bd651e83188b9641cc57c133cf86563dbeb5d5523766d4a36087165</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
+         <hash>d03a08079e678cc6e6a1e2105684ab0082d190bbb731f6807d75e1aca260e98f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\stdio\xc32_monitor.c</file>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\file_system\ff.c</file>
+         <hash>ef75bad24073ec54d3e76b06b26c56b604bb4f063fe6bd9ebe7c80bae94fd6d5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\port.h</file>
+         <hash>0410ff62d405adba7ca4a246f5311dcd4e49d6f9d3d2e5095dd05bc8873ca17b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
+         <hash>8621969ea669a1b230ff2125a760ef66d575c48cb45e9e457f768909abcbda46</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
+         <hash>06b5b66a9b98ad4998c82d353c0108b9db1a846951b8865cbdeeef90c5bbe2fe</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\pio\saml22n18a.h</file>
+         <hash>4f1276b95aad38720743df4f32212cfcf898b0856d41bd8473817f5ea5fd27c5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\bsp\bsp.c</file>
+         <hash>5cb21f9aaac63012c30d9eb9e34ab1e613e4c9f515cd7516cedbc9701ff6a16d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\peripheral\dmac\plib_dmac.h</file>
+         <hash>0b17da5f8f5b9a0ef54cc40b527002d86e1876b952cc8d63e10430ab940e9ea4</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\peripheral\dmac\plib_dmac.c</file>
+         <hash>6d7309126c616541988e4a1e3bd7361cfeac48949fa55339504f34d2811d6d5e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\toolchain_specifics.h</file>
+         <hash>c93f9d68b1623668727be21b4449250a7e4a5d7040776d6f6d604a7528ffc9eb</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\driver\sdspi\src\drv_sdspi_local.h</file>
+         <hash>b24bf595f80677aa5b27fdfd2dabff27234e41278af59ae8013e50f6cb3f3fec</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\file_system\ffconf.h</file>
+         <hash>521bedf26958bf5ab948de4d825953fd95dbec6c65ab0a3f5b6ddf34f0ff6c19</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\saml22n18a.h</file>
+         <hash>3609459ac205a922b2d411b2c7bf6412d9ff9373c955548c8eb077eee09f822b</hash>
+      </entry>
+      <entry>
+         <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
+         <hash>4452e3b0e6446b74c7d010d308072ba0a35c1f92bcf3882a54bf3796a72517aa</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\freqm.h</file>
+         <hash>a2cd42370577428b283e38c292e0894085a6ec444b99e1c9baa54321f9ac0987</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\freqm.h</file>
+         <hash>e3e7683407b94d65c15a35631eb2149aef834ec984d95513a4acea652fd156f3</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\wdt.h</file>
+         <hash>9f6f192a8d60c05469335a4d96f4f70b7f6e649d944a44a838e42f4a8181c5af</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\startup_xc32.c</file>
+         <hash>d7ba451f4fffc267a5da6a83377b2b935a88cd73342f8a1f38ea8c39a86d963f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\ac.h</file>
+         <hash>ec836b471e0add328724a5c196114457e4519e2245aafcd21f0cf736eba89672</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\gclk.h</file>
+         <hash>ed953a0b17acb7edc6903a56c1d81d4c40624abc56f53caf1c3d5ecb897c371c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\system\ports\sys_ports_mapping.h</file>
+         <hash>8a3e7ed01aa847c87f76796b56665f7f91f591fddfe6cf2e4161a03332608c3e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom5.h</file>
+         <hash>9f60a3e284a0b4b8a33c7a5381c3e4b0060e4d104a0795c4d66bf1f4f81faca7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\mclk.h</file>
+         <hash>064a07398cae3f8b2cb2ca10e49442c35e4d9dada81568504725b5d3daf4ce04</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\adc.h</file>
+         <hash>cad10202fce2514f3075bb600b27750c12cb46b4cf17a715b90a98b3881412d9</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\eic.h</file>
+         <hash>4d887ee5f370137077bad624fba4176f55fd1332251438a0ba6b7572b5ddd285</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\bsp\bsp.h</file>
+         <hash>da7fec5eb646bb8ba800f4242624eacfe4277bd8e015925828609ff9045a00a2</hash>
+      </entry>
+      <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\evsys\plib_evsys.h</file>
          <hash>f7d08eb8162f271ce1db384c082586a6624e506aa7f502c64c4ab5a1aadac47d</hash>
       </entry>
@@ -4062,20 +4438,16 @@
          <hash>6cdb5b324f2fd1bb5b2f47298ba6e6777e735d7cad3bb8d942cd36e2c6e65328</hash>
       </entry>
       <entry>
+         <file>..\src\config\sam_l22_xpro_freertos\pin_configurations.csv</file>
+         <hash>7d61b98d5c1076514084c409265f98768087aeccb5380e8328bf9096b40aadd3</hash>
+      </entry>
+      <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\tc\plib_tc0.c</file>
-         <hash>1817853ef31fc63327387d33cdb0095df89d6645ad26862971f4392d00e23c90</hash>
+         <hash>29c687b9733db9946b5036da9c652046c70f2fc1caba6c128b8dc2af69468415</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\driver\sdspi\src\drv_sdspi_plib_interface.h</file>
          <hash>8018f44adbdc6b3242355fec0a193a5ccd1bd941110ac834721cbabe975a9317</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
-         <hash>3d4e265d0aa42f888385ccf073666e6ebb5ec9f834760b9da27c474e177f708d</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>2bdfb8e3c1a76a5ccacb1b7815ca9acb63d1ba1f1bd29e5a75757d5e186c5056</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\int\sys_int.h</file>
@@ -4086,44 +4458,16 @@
          <hash>8ada9ab9e945ced7ad44a757a803785dcb2bf106096eb64f4eb2bb5efa7691f3</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\driver\sdspi\src\drv_sdspi.c</file>
-         <hash>eed806c89adbbcdc38ce9889c39565b97b631aad5fd18306eb2eb99b4a9e3c52</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\src\sys_fs.c</file>
-         <hash>43ef58e17742383c1af49126937f4f24585eb0d5a2c60e1a94fb05611974d8b7</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>0d16405e621a2c4b003b5f0324b9713cd4865364133df6f742f482a6b2dbc773</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>0607fcca1927ba782a29a3814481d69db3569e6e53a68ebf2c01f5598a3af2b8</hash>
-      </entry>
-      <entry>
          <file>..\src\config\sam_l22_xpro_freertos\driver\sdspi\src\drv_sdspi_plib_interface.c</file>
          <hash>a3c09f999ee45b027c15122b29452db4023d3d15b5f9b990bd5a19d334f03b98</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\adc.h</file>
-         <hash>6fd664ff77c2003d562378e3037002ed0dc8ad6919c631e38adcc112fd6bb1c9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\int\sys_int_mapping.h</file>
          <hash>660e7081f93de17660144721849acf269925988a4f6510028d25903aaa866ea1</hash>
       </entry>
       <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>f9b239f168976f7b167e054fa72616826f55ae4d74d76b87c9e70b2df079363f</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\tc3.h</file>
-         <hash>705d2e76410d6673cabac247cb6700a3ed0ea7ce7ceba62d0d6fa9e22a8c363e</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>8df4c5eec7eb30262f09b7c47fc2eb0534a27721293b0d260a3398846494f9ac</hash>
+         <hash>0c7f525d6f7646f31cb96fb77807ee00f9fbaac974b2489c9ab60618b8e67c8d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\evsys\plib_evsys.c</file>
@@ -4131,27 +4475,15 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>e31cd1c9c280c919a92edc28885e9bebce589d4cfab71cefab832a73683200fb</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\dmac.h</file>
-         <hash>dcd07b592de9873052573166a9281b9e4180a6e1bf91af95eeccdc2636c440f7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\nvmctrl.h</file>
-         <hash>b5f80ef4809a26ebfcd03da4f0ed689750fc8cd49a05c1d1d47542b8f47e5e10</hash>
+         <hash>4566d5abfceea128a553ecf2bbb22b9d7c9c8a1d3c1f02f9091182b5290d02fc</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>39795c8dded505f24f53646ecd8192251851c74f366d2a5b0aae3fbfa68c191b</hash>
+         <hash>c95eb0d549ff1c20edebfec41d73584b5a20d21df20a724084200954b9e8d252</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm0plus.h</file>
          <hash>a19e24c136145b4c72630d0ab7c83a7aef010f3ba165e34c56a05057a2d9fed5</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\system.h</file>
-         <hash>2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\definitions.h</file>
@@ -4159,27 +4491,15 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\osc32kctrl.h</file>
-         <hash>e6ca9edaf0d265445e89fef82636c8b5bfb61056dd119b51da545ea0d05beef7</hash>
+         <hash>51a5edeb80f0011d0ce5fc3b503a2fb199f897ee1bc47a0f9d165a1a45a72f1e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\tcc.h</file>
-         <hash>5f75db48e6ea7cb1450d0e1373823dd568f13893c14c03484d2ebadce227e78f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom2.h</file>
-         <hash>ceb47abd1eae22133b43b0c6bb666e8598e8105083821979b3da4184fea2da9c</hash>
+         <hash>6586d0febbe459a19f8f2f6c808b05d484722cd8f1944dc5e9665773990f69d3</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>e735517f308fad5dd77d03b6858c16bdbc937bb9d0754735849fc7799ebe2b59</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\int\src\sys_int.c</file>
-         <hash>23e798871ce6f7b4b0e0dbd5cb2cad7b43bd2dd1f38152f28d14f5a5b7a2938b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\osc32kctrl.h</file>
-         <hash>4f2df338c5a7a7b33c275e13ba60f5fa0f70a9e00dd1ea86832ec603d475e32f</hash>
+         <hash>21fe8dd565f9610e1ff4a6bf7bebbd16842af13d3d2294f1dc67ad279fb01d22</hash>
       </entry>
       <entry>
          <file>..\src\app.h</file>
@@ -4190,60 +4510,24 @@
          <hash>632c78c323cb9f8c6359f20337440c08f8461eb4b0304552b6a3cfd5c4052620</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\peripheral\tc\plib_tc_common.h</file>
-         <hash>487b4f489229b8e16b24ab48ddc1f414b095585439f0e10d53b2285fc3979f63</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>3fafd21399ef619a55b2f8112750d750685c8ae1cb458363d21ee37a105ac6e7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\ccl.h</file>
-         <hash>531862a4ebb42b6dff5b1854907b8ef1328c2e67a3219e8d464ea3d5a0b8e4ad</hash>
-      </entry>
-      <entry>
          <file>..\src\config\sam_l22_xpro_freertos\freertos_hooks.c</file>
-         <hash>9ad70cf61f23e435987222ef070cf0b4b099d56f1e8b13fcf9d69723c064bd16</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\ATSAML22N18A.ld</file>
-         <hash>1d9e02e1e624c97b845a6bc40492295c93116487d67d550445c3a37e98175fc5</hash>
+         <hash>1c31f7febed38afbcb09d11b002c5dddda98c7ed7aba9ff8f8e32b8c5f288a47</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\fs\src\sys_fs_media_manager.c</file>
          <hash>fb06977374492e54f4cf962d857b98348748c77ceba7513df190c9db530e1d51</hash>
       </entry>
       <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
-         <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\ccl.h</file>
-         <hash>4b04f8db82b887057354938165e853f3baad75da626d7ae43ca6016419d563cc</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
-         <hash>d074534d7106cec83474b3b0a897bd2553e1a8895ecbd54f4f4fb25928066eee</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>b7a81501c3f4ff9537df5c9a5e0231f37638cdc8324965ae10064128fded840f</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\trng.h</file>
-         <hash>5386902b21476c7bcb3995e2a7fdf636cb69fce7dd8ae75a99cae4005ca9d460</hash>
+         <hash>6e7d9c70920facbcad9ac2a66bf6a4fac2315360b80c4e916c757ffb800c52db</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\tcc0.h</file>
-         <hash>8cfda549fe9c435c7abafdf36bee6158f3e2a6e46eaeb9fb0e471a2b835f1103</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\osal\osal_freertos.c</file>
-         <hash>6f35cfd335587dd112d0ac648ae99539a5acbb98ba80ce6e8c7c855e7b8d7465</hash>
+         <hash>cea6db7e6c9914fbcd165edc9ddf157ba7da449fb9a0af1f9a41c63de8c16bd5</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\tc2.h</file>
-         <hash>4109b68b678801c6a35c5934d68f0efb0470fc6da50f3f94bac5093e095e4272</hash>
+         <hash>3e4e29fe9d50a99368b348f18c8cb69765c62c30be4034a326db8a6d75f7577f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\file_system\ffunicode.c</file>
@@ -4251,31 +4535,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\interrupts.c</file>
-         <hash>d872e89fc031e90eb84b19d4a31a19fb534cd79de35bdc7193c6ee4123c2114c</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\evsys.h</file>
-         <hash>afade73da3e3852e6c9c5d66f772d12d592eb0dd54108c06d906fd755afe9197</hash>
+         <hash>fec90ab58c25eb755237a8bb59e2fb87106f5ddc1412cc6647083fcde9a7f4f1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\supc.h</file>
-         <hash>3c7ade9ec6cb1de9eeae48fc808cb0379aa788671cfbd4350df7c6f5ac9c428d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
-         <hash>11b39b96ddc1125124762b3423a77b90dd40ea5b4582a3513830245046b24311</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\osal\osal_freertos.h</file>
-         <hash>ca5e502b9f076c4bdc8d97ac2e4cfdfa5d1b49f7d64222c353fac4dcd794bc7c</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\user.h</file>
-         <hash>451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\slcd.h</file>
-         <hash>f34eb2899cb458b9444eb1949f3c4056bcb68b680c3791762ae712002e60c9ce</hash>
+         <hash>c6f394b3e73860fa6d8a8969c105e30d9a20dae78cbe7cda4e8b21ca60540a8e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\osal\osal.h</file>
@@ -4291,23 +4555,11 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>39d58a203f1b67fdb1099293914a2af9722d223586cfc5ff06e230e047919dea</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\system_module.h</file>
-         <hash>981fac23277aa77f682e7a9a28d436f892006cd5b4c7f23f50941b6d9a30e740</hash>
+         <hash>ff7a2139380ad0e2695bbc0d068db7a3b7e54ec41387b4c77acbe1aaa2921b7c</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\time\sys_time_definitions.h</file>
          <hash>8a02a9fe9638f0afd2e1b4c65f4d4265cd34d8814defa74f9af6d75f52cd317d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\sercom.h</file>
-         <hash>d7d477ddc15e3c3755f910483c51a59eb051b77342512c1322add6785abe4c9d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\aes.h</file>
-         <hash>dd9c8146b63c02d31888fd4b1a0620469ce8311234c9d04263b404ca4ca3d7df</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\dma\sys_dma.h</file>
@@ -4318,32 +4570,12 @@
          <hash>857103c3cdd998ea45f31516f435a01901a28afe894c8cce719240297d6c7546</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\rstc.h</file>
-         <hash>9be47aec97df71cf0ee2c132ed0f4bd8750ba8fca9f3ec75c8c5adfe37dd4471</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom3.h</file>
-         <hash>f4c9b4b3084dcb6e72fb55e5371571589acc5769b4c90f1cb7a76170b683b485</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\trng.h</file>
-         <hash>c1a76015ff961ae63a8bee0402fd2ee20d764ee087326838208d5863f50e2b88</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\oscctrl.h</file>
-         <hash>d39c12b75db53fcf45807b69a11e873df97cbf9abe200aa19a9aafe89e3b96fa</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\supc.h</file>
-         <hash>30a0ca60996a88611b4ee1c214b1913bafaa0e19f52b6f8a1c643bf7f493cf71</hash>
+         <hash>0851bc8b258923314678f3994cf5600b10600e17d4705e314b857b756f2c4127</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\evsys.h</file>
-         <hash>d46a2474068c4f22354cdd74c70bddedebb82fdf6b52971aa35bd917e6fe893f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\dmac.h</file>
-         <hash>7f9f06b00a14944faf5a47f17f3b22e790a2bf9b78f2f02d524d1a726127f73f</hash>
+         <hash>3b5e68e9bad92a5e2776ddbf483810c2464bd23ff44be088808c6ea3f10050b5</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\driver\driver.h</file>
@@ -4351,35 +4583,15 @@
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\fs\sys_fs.h</file>
-         <hash>46a5946f727b22530f0e0945a33cad93077c7b92c1bb2811959709ba7be60e9c</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\tasks.c</file>
-         <hash>732a09e7d3c0879661b73a7a710c344517ed218acb7f3110ef00c70f6fd99228</hash>
+         <hash>f6b88c65147de18477aefc67aef580fe328c2cfdaa3617cc757c10e84092b346</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>
          <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\time\src\sys_time_local.h</file>
-         <hash>a761ad68ce0cbac8c326bd17e54cc01d10324ed8d5e120ef092856a21604b6a2</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\slcd.h</file>
-         <hash>dd95f2414e5de6dc1342102a08e2cabfcd5575ca927fb1f9f6091a26e321fe4d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\rtc.h</file>
-         <hash>bd97309ee209d2b4035bae8477d513cd9a59ecbafec5982a9f56bc1408a1e888</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>382f8a7a0e00240fb69911dff8d8515248beb9dadfe77c22c4e5544f49cc76eb</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\sys_fs_media_manager.h</file>
-         <hash>6cb6bdb605ca6e8b9e683671cffadbbc26a1f686e3eaedc74a6cba860e8ac3c4</hash>
+         <hash>9f147d02c7dd1f069769ba9916993ed3c491c2f1ace2682a87033c58b540195d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\driver\driver_common.h</file>
@@ -4387,23 +4599,15 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\mtb.h</file>
-         <hash>ce6751a85f003255de68b3b9dfaa322c4d2b006c1c63962f05ddf5bb57e8a262</hash>
+         <hash>ad506f661fe6f01defdc2b5027adf9389316cce5306083e1421c5dd4c6eedba9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\driver\sdspi\drv_sdspi.h</file>
-         <hash>753aa0de25a73257a193e7f4a36fff0750ca68ce2175615aad6aa1a6b141652b</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\hardware_access\diskio.c</file>
-         <hash>accf63aa5c072a3e82a92eb72536ee727fd2b6e1acb1fb8f592dc3d074e4f69b</hash>
+         <hash>b33d6b822b44e0b83cf616e72cf454d6c721ec2cc1704d681789ea2eea95e63c</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\mtb.h</file>
-         <hash>32da15a9e4106ba9ba4dcd240e3e724aeb0c73fd7ae2b18ff0ffd0b1576a5a3c</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\rtc.h</file>
-         <hash>f6893b6f4858682cf04a1092983ce809f9f298db32b97c205a382bc69504c915</hash>
+         <hash>7dafedcc649677f5169899e070bb1c5e2e99312e7439acb7f9f3c95335c9e6bd</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\initialization.c</file>
@@ -4415,7 +4619,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\nvmctrl\plib_nvmctrl.c</file>
-         <hash>34bf61eae058c5d773c8f80f2ef35f9126305b82ba4ec5dc8e0b8d4d30c7e561</hash>
+         <hash>d0cb51cdb15b1a54eb3842f7c3942c83da67c7c689cc7c194aa8e6f2a4e26653</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\device_cache.h</file>
@@ -4423,31 +4627,15 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\pm.h</file>
-         <hash>211e43f6bb407a487d52bb5cf20e3c315372a2de41dcdfe4cb61f52deddc7580</hash>
+         <hash>cc952a84028beb162605a08f964ddba5285c3478033c420026f84dc2738eceed</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\nvic\plib_nvic.h</file>
          <hash>81e813a093101d546799e00723cbf7245e2d18471fa51c8d130c5809cecca03e</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\peripheral\sercom\spi_master\plib_sercom3_spi_master.h</file>
-         <hash>5fa03ab6dd395a75bdbf25cdbcb5bbc7eba7bf0bdba9481b94e4cb27f6ed08ce</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\hardware_access\diskio.h</file>
-         <hash>eabe00adfe80de32df0b75244c230f3a04dbc27cb29b1d418cef549e3e7a9ec2</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\pm.h</file>
-         <hash>a023017d46d0ec53d6251de3a4394ac4af4d6a467fefe63c70c584ea9b8aa5dc</hash>
-      </entry>
-      <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\pm\plib_pm.c</file>
-         <hash>e2c83448ebeabbe9e42a6af9dcddd78cb8e01e049f274b6abba166c88b6b8d8b</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\peripheral\sercom\spi_master\plib_sercom3_spi_master.c</file>
-         <hash>49559684a79681c6742ce51245d06d3fecc532d0786381a467f2312e52927f60</hash>
+         <hash>b795f2a04e573a578b2977feeb6e172bc6bb24ec1d3dad7b1b8a4413de738b8b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\ports\sys_ports.h</file>
@@ -4455,51 +4643,35 @@
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\nvmctrl\plib_nvmctrl.h</file>
-         <hash>52ad367b7301a6d2da6d0f6dabce016e228a4a9980caf4b82d37422678a8be37</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\tc1.h</file>
-         <hash>14e0d0ead8e002a61d3df0c87f5a0d2680692fae2fea1be3982ccd3db2b19859</hash>
+         <hash>3706575d02d502967b3a77c5d6c33f26721148603934715fcbd98c62d20a2663</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\nvic\plib_nvic.c</file>
-         <hash>1f0c84c54bdd2600494cf42ecac20ade827fca214aa45460d0de274807d22a25</hash>
+         <hash>5149ad6d7bde1f981611aca15a67563de36039d458e4decab555e991c1257dc7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>b9b2ff28a0c80fa21443690bb28de64c8b9451cccd57e484de0bcf02fc367575</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>cfd11f78d92b398e8347f2b55dc1e79dffce83f63f7e570c6fc821334681ad12</hash>
+         <hash>6bc571df5182f06bcafe5280fdf762bbba2bf1dbb7867ae3721ce2d7e3e51dae</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c</file>
-         <hash>4ff3922a0d064b557e1b4cb2943d622c958ae70accec55fe1dfe5fcffa3ad0ca</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\eic.h</file>
-         <hash>1b071532d647b31927757df7e4f00e040f6b5c149d879e69fb02f8fac9217b17</hash>
+         <hash>129e126cc6037bae981bbb727343f58a997bdb9850d1c920390a07e82fdca5ad</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\ptc.h</file>
-         <hash>752eb770181f2e14e3d34a63e53f5cf4546d713bca17ab4690c6f9f4ca9803fd</hash>
+         <hash>1a70db7a0daf2716cb90193e21db83a68392f00337a6b2b9ed6ed967d7c492c0</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>8cb1eabe18f130b2b8980e880847f773fb12a4071c763d26c51624223b32a3a4</hash>
+         <hash>f97f4e54a7511e5aea34f583061c628bf718b1024af6ec4cff55cb50365305da</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>a72063c3977fad098a87a5430e04e9fc5b892d703e01fbe09ea907f67aacf20e</hash>
+         <hash>82542c835466f2abd0eeb2988a0bcecf3d6a14c9dd87ad4a7ca325b15afbce95</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\device.h</file>
          <hash>954537dc742209317d5ae28737888af9ab6b16ba72f11fa5a1c2e3050ed132cf</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
-         <hash>2de01ae2556a38eb82c389de23c701805ec63308cfbcf3f84cb12141589b0858</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h</file>
@@ -4510,240 +4682,108 @@
          <hash>643429281888e9ac6543abed62f23e4f2a882ef6f2fb4c42ee61af83cc953a22</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\dsu.h</file>
-         <hash>24eda7f671fb76c3305a656b5c08a7ca1b1e6b49b02b78186f9808b0fc31cb23</hash>
-      </entry>
-      <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\time\sys_time.h</file>
          <hash>f21b100d8f0b8b79af9217315098d51df855d9015f05a7e25ad77414cd19b2c3</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\src\sys_fs_media_manager_local.h</file>
-         <hash>bbc6074719c421b07d4540ee6e745ae4145239f698780819c479e13bfdd9ddd5</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\fs\src\sys_fs_fat_interface.c</file>
          <hash>581a4c11a2e6c4aa4aa2c64742b276d5d4b3bd1dbdbed1983aab17f162f4c47b</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\aes.h</file>
-         <hash>8500ea55b1bbbfca8e408ca1f9f244672da7c87d465346cfabec0f8bc763c03b</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\libc_syscalls.c</file>
-         <hash>ff03e955db4f7bb775c7989bc2254553698f3d921e9885caac347ccd118e55d7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\tc.h</file>
-         <hash>8f2897048ac1ebf07b5bcc59988deca913f57b9e91492cb1b1fbda0636324de3</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\oscctrl.h</file>
-         <hash>a03efe26656e8cdaea503390fc5b09c585858d70dad21cc43fd4e70b501bbd41</hash>
+         <hash>5ebfb2c0a89d7651449ddae8ff80c600cee59fcc7cb4371e633527be5d6d75c3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\rstc.h</file>
-         <hash>74f4cdf3862c2c7bb5a69731bc40024d4e71c09e9dbf9808cec374ef654c1f79</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\wdt.h</file>
-         <hash>47bea2b2a747017005dd7b69593ec955a1b42108518c523e959dd5dc0571eb50</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\dsu.h</file>
-         <hash>c971391f4dde38e39017abb52ae99911dfee8dc49332acd23498442d0350326b</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\file_system\ff.h</file>
-         <hash>910fa58ceb264c7e03edce224b6484fc2fba3c8d6656975e3c01cd45cdc5d4b3</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\tc0.h</file>
-         <hash>b534424685a260a8b0ce9a4c2aeb891528d5404911b6565dd277be683e6ded89</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h</file>
-         <hash>228298ed432502733c5dab84c2c0ab1fe9b4643f791500d3c1270d1c2cd5dec3</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\interrupts.h</file>
-         <hash>0759a31ef8d920bf3aafec5f2a9d01218dd7fc8602bd6df9998ebfbe25c018cd</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\pac.h</file>
-         <hash>ffd30530d5b928df02fc8187c1da1bfd2f6c4dd4558902c1e91ca9014cb49604</hash>
+         <hash>a043cad96beddcaf550c0b7b703339ce2530c566f3ee38a8c369477601ad63bb</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom0.h</file>
-         <hash>e556107f454bbac9d45ede26d6b7855bf2f4920e9457df69f1290128257db758</hash>
+         <hash>ea1747a28444004e7845c73b9bb41475a965a603d66ee5aa08bec63c09aa4e4b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\configuration.h</file>
-         <hash>ffc3d8a957c0fc14b99a1b9bb7fd9234a55090da10ef6959845b12b491b634a9</hash>
+         <hash>596cd051da1490d2903cd291a09dcac71c1f1ce8d3995015524ebad5b673cb39</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\FreeRTOSConfig.h</file>
-         <hash>290c91906c96ffc9783984a73e4dcea3407608f44ffbc77e7dc278da841c0b13</hash>
+         <hash>a420ca57be4e088ac3bfc575d6c33b27295be5203518fdef0058e4f41917b2e4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\ac.h</file>
-         <hash>15ddc3b711bd2c15741874eb8a07fa63355c97ba9d495947510cbdcb797aaed5</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom4.h</file>
-         <hash>e456ac46a5880c17f91a5ddb4d1cbcc5af073e1764d18e7cb9b28e4317a420a0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\pac.h</file>
-         <hash>a1d1f21da94c9a6a56e4e405761f68189fdaac7ab52001e69c30a48423e20539</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\debug\sys_debug.h</file>
-         <hash>c17a266d85e3ed1dd692a96184193c0ebfea1099f6698ca073f82418d92d8b53</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
-         <hash>6d8eb84e5171bce4d5cde80abc575ebd7d81ac007b7733f34d5032bac93f1748</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\stdio\xc32_monitor.c</file>
-         <hash>26e5749db654ed433fd94f6c732ef8600d0cbf5196493374cf111877c02b694e</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\file_system\ff.c</file>
-         <hash>89210dcb75cae2c2c9cf5e835ccd0b5a8dd5860ac9f79661207076b9a4d709e0</hash>
+         <hash>d59dd9acdb6e820a288b6efee659737055abf228b71a1272f0f922536b598f92</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\ptc.h</file>
-         <hash>c2963f1dc8fb0d4122c7b2c25a85141a4b22fbbedf11e0cbc12832e83806bab4</hash>
+         <hash>b35ee3a6c9dc17ab293b52389c1bef90343954eb433a051443be0a72fdc7f431</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\port.h</file>
-         <hash>b468f2d7153a1d7d286c87d59692cf5bf72e4e71887f9dbfb227112f10233903</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
-         <hash>8621969ea669a1b230ff2125a760ef66d575c48cb45e9e457f768909abcbda46</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>7d1d30b6c9ae34bebb26b14402f78a59a35ae826f460a1ad28534c9590b32151</hash>
+         <file>..\src\packs\ATSAML22N18A_DFP\component\fuses.h</file>
+         <hash>240905d05fe372b1aa20f88c25a8cd6212e544d02b3f3e6617af8e0969d5f952</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\time\src\sys_time.c</file>
-         <hash>ddec1a83e32b63552ae72f884dc849e376b60d411669554f7ec492fff180662f</hash>
+         <hash>4c2c39bc061655a06d6da7bd1f448c4de26a181e5710d74b4391923fb37ddadb</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\pio\saml22n18a.h</file>
-         <hash>84338f1046bfc16fb14645f5033efe4f2752f35483765e8a1092313469f56cb0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\bsp\bsp.c</file>
-         <hash>5cb21f9aaac63012c30d9eb9e34ab1e613e4c9f515cd7516cedbc9701ff6a16d</hash>
+         <file>..\src\packs\ATSAML22N18A_DFP\instance\fuses.h</file>
+         <hash>aacc6f30e102e1310ff12bcafc72f829bc7839f7a05a62155040dee2ecc3e446</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\nvmctrl.h</file>
-         <hash>7937fa09e782fca22c01747333c0b1f5b4a2986580f7df2117e9285c61c80eca</hash>
+         <hash>db85f646d1fb28455d6c3c36671003a677186a11894cbff89ad5ecf98f886b08</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\clock\plib_clock.h</file>
          <hash>7dab32e3ac30b92ddc2d45b26b82d24a8cdad578d20086e4bd2678e2518c5378</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\peripheral\dmac\plib_dmac.h</file>
-         <hash>0b17da5f8f5b9a0ef54cc40b527002d86e1876b952cc8d63e10430ab940e9ea4</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\gclk.h</file>
-         <hash>496590ba6bbed254473576f71207f79fc247d7f9caca090b724e257f642b3d9a</hash>
+         <hash>95213d6cdb36ffd79c3dcfa147bf9d5d5d45dc9461d8f2b66da1cc6951642440</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\usb.h</file>
-         <hash>6e62e7ea63c6d2fa0656d61e52692e0860de36a4fe53ca5fac3feeda1d094698</hash>
+         <hash>477745221dee04ac0d8374d649cf88fca52d1bf28d4b5b97d3b1b80ac482ffd6</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\port\plib_port.c</file>
-         <hash>d18a260ef1819ccbc25e8ecc42947bbcee0a403fa1c0abcc645117e2e789941f</hash>
+         <hash>ce5c9640b031b8ce6db25afa44bf557eece0736006382047cb828d483b3bc8ab</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\component\usb.h</file>
-         <hash>a5f6a51d6417058e66756e0d0518a879ff11b9f1b40ec7798bbaba3238986c69</hash>
+         <hash>cd606fa382982e831bee597f81d3e113e111b03e3a07b21fbbbeecccfeac58e8</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>399814721d9735e91d74ca07be3974edb20639acb46a6792230ff9f61f67b353</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\peripheral\dmac\plib_dmac.c</file>
-         <hash>97758830b9aad868ea7c0fb42ffbafc6c1218d603e222bd0a9bd0f47db415b15</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\toolchain_specifics.h</file>
-         <hash>c93f9d68b1623668727be21b4449250a7e4a5d7040776d6f6d604a7528ffc9eb</hash>
+         <hash>292c78c91dbf63a6aa028f381b1dd548d549949f4fb9fcfd97f949569e013d76</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>504a77558f13b66fd1eec5adf4d81e274f0b54c12880424833c24f577be0800a</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\driver\sdspi\src\drv_sdspi_local.h</file>
-         <hash>b24bf595f80677aa5b27fdfd2dabff27234e41278af59ae8013e50f6cb3f3fec</hash>
+         <hash>0f5a90e8303d9aa2a9c897d6b90da50df21776c6bde7bf8c792cacffa3048c8d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\clock\plib_clock.c</file>
-         <hash>ba11f3fe09908bb136af16695bb1a8c14b5ea912b2c5c1fc26f72b8b8b37afcc</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\fs\fat_fs\file_system\ffconf.h</file>
-         <hash>3f5b2377956be1566d15d64a6365d957f7dc6ebb4d063682d0a5cf113aa0398d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\saml22n18a.h</file>
-         <hash>946b45a247c64f57939dc8661300c9d9e80931ca8174d3aee47b3dbe7b674cc9</hash>
+         <hash>12ae0c24925cadd243ef64c851e3d598f8745c8f60f24a0a663a0db9dab884b3</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\port\plib_port.h</file>
-         <hash>66e723724890fa6bb8716c80cbb6a32e4ca9a2981f5c27cd37ff60a5f0bd7810</hash>
+         <hash>0865c7d2a670ea13ca7facafb016ef8f6dd429b4f8b442dc79734ceb352ddb72</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\port.h</file>
-         <hash>57a67be275a9b11ff6b54a682d8b9b2a0f28cf628a56166bd7f1abde8b095eea</hash>
+         <hash>2a9cb843f26c2a41bfc5aac2e81a3d88e989da6494f60d8c30705cf448ceabe1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>3b9cbd64db721c4317544700fff4e42ac68d989f71b7d610b31087bb19175839</hash>
-      </entry>
-      <entry>
-         <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>06a153c1ce111213af32dfc8797bd2e5c7819e264dfa338b4049f058dc1edb11</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\freqm.h</file>
-         <hash>29116b8eff198d5d577c11cf7787c99cdbe2925c7aae73832e85518fdd8b124b</hash>
+         <hash>a73c0b319370116d5981d5dacbabad3a775f85ae540ef70b4ced1c99c9ac6cd5</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\mclk.h</file>
-         <hash>2368ddf934729047e2fc9bd074f1cfb75a999589a6b28630b03f0735e910bc45</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\freqm.h</file>
-         <hash>088f448ec2efc3aeaa6983d2d3a20a2f43145d24fbd2e0a48de90b5d2e5fe9d7</hash>
+         <hash>6f4b0459eb73a12949788900143f67c73ebc2e6967f8083e970c2e6737e6a518</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>c1fc47acdb79efb0fb8a0fb8a169ae4423fdc3a6d820b2f81d49e8e077c1ed48</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\wdt.h</file>
-         <hash>c20f80f406fc7454430bb546bf1ad70a9ddce33d3c3f1e71a2ab07bdb87e5fc7</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\startup_xc32.c</file>
-         <hash>be2c779688c247443de3423ff9ffd8079d8e5afd090c46997829e1cf1d57c73f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\ac.h</file>
-         <hash>21a5f41b988d4c21821b960f30a75a6af837709fbd2b63ce2d85db1e7147ebc4</hash>
+         <hash>0f7a750669b24c41af51482eb76c867a1ed11c14dd4877d07433db3953d9a792</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\fs\sys_fs_fat_interface.h</file>
@@ -4754,40 +4794,16 @@
          <hash>9757dc4a413f39e70813ea66b1825a7467f1b9a38a94d066fd39eb399361b438</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\gclk.h</file>
-         <hash>edf8e36201665e48358847f013e9f889180b120c4433f6b5750b78a667b7fa8e</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom1.h</file>
-         <hash>7b3bb7c4d5b10534fa555fe2f8610f0f5b6fc403efbf627b46dbe8bf50fa10ec</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\system\ports\sys_ports_mapping.h</file>
-         <hash>8a3e7ed01aa847c87f76796b56665f7f91f591fddfe6cf2e4161a03332608c3e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\sercom5.h</file>
-         <hash>5689d2b3d09d9a378f940d0ad1bf7e917c3374329063ff2fb7de7386308ae912</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\mclk.h</file>
-         <hash>34b5a6a5674af6325f2e9350bdee5c12151e1f68defb6ab7c15d9f43bcdec5cc</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\instance\adc.h</file>
-         <hash>17109094f4009408880229b5187f0967b960e1199e348bd772d68029276e5233</hash>
+         <hash>62751c4d30d0a622697e29eaecc301730585e70b792dc92eb20fedcc01cd4535</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\device_vectors.h</file>
-         <hash>a51da34ec85ed6dbbc7de61ef5328228f740125513e11ac4e0b86449bf40a5fa</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAML22N18A_DFP\component\eic.h</file>
-         <hash>88f792a52e2941ff2f626b1f91b86fa79f880617589dcbbbf9a5cd6a59de1a87</hash>
+         <hash>76a738d34902c8bf47e7c4b1bc46359258d1f2dddcbf6a43cfca424465c2489d</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>4376714fecad0f72dc4c8b45236591a7e0ffe24dd018382f56e8b0dfc2230b28</hash>
+         <hash>a62731cd211dd9caf70958b229d4a3a607ef12e6fbfec573a0d089f21c45f34f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\peripheral\sercom\spi_master\plib_sercom_spi_master_common.h</file>
@@ -4795,15 +4811,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\exceptions.c</file>
-         <hash>81b076ed13a5bee8001d0af959448249ff2ccec5ae0ad0b80df6bd11e857a946</hash>
+         <hash>cc07b84902bf881b410bee8cd4463b438ad2997c8fd8d3f308a16d926f75d601</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_l22_xpro_freertos\system\system_media.h</file>
          <hash>be592b4eb9eb4cc8f25cf734fc15b088de091d2f8051b0fcba091c1b6194df5f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_l22_xpro_freertos\bsp\bsp.h</file>
-         <hash>da7fec5eb646bb8ba800f4242624eacfe4277bd8e015925828609ff9045a00a2</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
