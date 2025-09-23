@@ -184,9 +184,26 @@
       <itemPath>../src/app_monitor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro" displayName="async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro" projectFiles="true">
+        <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/BSP_SAM_L22_Xplained_Pro.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/HarmonyCore.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/cmsis.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/core.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/dfp.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/drv_spi.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/drv_spi_0.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/drv_spi_1.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/evsys.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/nvmctrl.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/pm.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/sercom1.yml</itemPath>
+          <itemPath>async_spi_multi_instance_sam_l22_xpro_sam_l22_xpro/components/sercom3.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_l22_xpro/harmony-manifest-success.yml</itemPath>
-      <itemPath>async_spi_multi_instance_sam_l22_xpro.mc3</itemPath>
       <itemPath>../src/config/sam_l22_xpro/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
@@ -275,7 +292,7 @@
         <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
