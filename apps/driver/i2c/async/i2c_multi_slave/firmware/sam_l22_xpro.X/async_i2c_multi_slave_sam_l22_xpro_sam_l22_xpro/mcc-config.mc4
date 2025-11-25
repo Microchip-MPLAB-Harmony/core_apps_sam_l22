@@ -39,7 +39,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_l22_xpro\configuration.h
   hash: 075b3c61b419bd77fc7ed701c65c74d42d6c84c8aa4fa9acf2769179529aecd4
 - file: ..\src\config\sam_l22_xpro\definitions.h
-  hash: fa4a70e3f300548f10b829d0bb0a7921e2b221c6858e8bd993f0cefc112412e4
+  hash: 35a6db64df685261df521f22991d390112679558240d1be3323f58c95ff2dd33
 - file: ..\src\config\sam_l22_xpro\device.h
   hash: 0de67b551f51caff91a4a56e6c390824b6698ffbe714cbcf7df0675af1d0de2b
 - file: ..\src\config\sam_l22_xpro\device_cache.h
